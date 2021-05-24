@@ -1,0 +1,6 @@
+---
+---
+
+@import
+  "skins/{{ site.mono-lite.skin | default: 'classic' }}",
+  "initialize";
