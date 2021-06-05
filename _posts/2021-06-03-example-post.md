@@ -2,6 +2,7 @@
 layout: post
 title: "Mono-lite"
 subtitle: "Jekyll Themes"
+category: Web & Apps
 src: "https://picsum.photos/180"
 ---
 

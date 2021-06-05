@@ -2,6 +2,7 @@
 layout: post
 title: "Example Post 2"
 subtitle: "Somewhere"
+category: Web & Apps
 src: "https://picsum.photos/200"
 ---
 

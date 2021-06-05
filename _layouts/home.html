@@ -2,18 +2,26 @@
 layout: default
 ---
 
-<h3 id="web" class="post-category">Web & Apps</h3>
-{% for post in site.posts %}
-<a class="post-row">
-  <div class="post-img">
-    <img src="{{ post.src }}">
-  </div>
-  <div class="post-details">
-    <div class="post-date">{{ post.date | date: '%B %Y' }}</div>
-    <div>
-      <span class="post-title">{{ post.title }}</span>
-      <span class="post-subtitle">{{ post.subtitle }}</span>
-    </div>
-  </div>
-</a>
-{% endfor %}
+<section>
+  {%- include header.html -%}
+</section>
+
+<section>
+  {% for category in site.categories %}
+    <h3 id="{{ category[0] }}" class="post-category">{{ category[0] }}</h3>
+    {% for post in category[1] %}
+      <a class="post-row" href="{{ post.url }}">
+        <div class="post-img">
+          <img src="{{ post.src }}">
+        </div>
+        <div class="post-details">
+          <div class="post-date">{{ post.date | date: '%B %Y' }}</div>
+          <div>
+            <span class="post-title">{{ post.title }}</span>
+            <span class="post-subtitle">{{ post.subtitle }}</span>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+  {% endfor %}
+</section>
