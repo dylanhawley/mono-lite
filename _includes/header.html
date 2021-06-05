@@ -1,4 +1,5 @@
 <header class="site-header">
   <p class="site-title">{{ site.title | upcase | escape }}</p>
   <p>{{ site.description | escape }}</p>
+  {%- include social.html -%}
 </header>

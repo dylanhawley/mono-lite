@@ -1,6 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
-  margin: 26px;
+  margin: 26px 0;
   line-height: 1.2;
   font-weight: 300;
   -webkit-font-smoothing: antialiased; 
@@ -13,4 +13,9 @@ a {
 
 h1 {
   font-weight: 600;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
 }
