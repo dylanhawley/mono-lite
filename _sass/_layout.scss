@@ -93,8 +93,7 @@ h3 {
 }
 
 .post-img img {
-  height: 100%;
-  width: 100%;
+  object-fit: cover;
 }
 
 .post-details {
