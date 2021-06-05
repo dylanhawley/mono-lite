@@ -142,6 +142,11 @@ h3 {
   margin-bottom: 8px;
 }
 
+.post-content img {
+  object-fit: contain;
+  width: 100%;
+}
+
 @media (max-width: $on-palm) {
   .site-title {
     text-align: center;
