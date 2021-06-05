@@ -4,10 +4,9 @@ layout: page
 <article class="post">
 
   <header class="post-header">
-    <h2>{{ page.title | escape }}</h1>
+    <h2>{{ page.title | escape }}</h2>
+    <div class="post-byline">{{ page.subtitle }}</div>
   </header>
-  
-  <div>{{ page.subtitle }}</div>
 
   <div class="post-content">
     {{ content }}
