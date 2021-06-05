@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+<section>
+  <h1>{{ site.title | upcase | escape }}</h1>
+  <a class="back-btn" href="/">
+    <span>👈</span>
+    Back to all work
+  </a>
+</section>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<section style="margin-top: 32px;">
+  {{ content }}
+</section>
