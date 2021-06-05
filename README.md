@@ -2,6 +2,8 @@
 
 A lightweight single-column Jekyll theme.
 
+![Screenshot](screenshot.png)
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
