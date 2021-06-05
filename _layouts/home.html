@@ -2,4 +2,18 @@
 layout: default
 ---
 
-{{ content }}
+<h3 id="web" class="post-category">Web & Apps</h3>
+{% for post in site.posts %}
+<a class="post-row">
+  <div class="post-img">
+    <img src="{{ post.src }}">
+  </div>
+  <div class="post-details">
+    <div class="post-date">{{ post.date | date: '%B %Y' }}</div>
+    <div>
+      <span class="post-title">{{ post.title }}</span>
+      <span class="post-subtitle">{{ post.subtitle }}</span>
+    </div>
+  </div>
+</a>
+{% endfor %}
