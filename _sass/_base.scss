@@ -37,7 +37,7 @@ a {
  pre,
  code {
    font-family: $code-font-family;
-   font-size: 0.9375em;
+   font-size: $code-font-size;
    border: 1px solid $border-color-01;
    border-radius: 3px;
    background-color: $code-background-color;
