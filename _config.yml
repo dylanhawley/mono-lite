@@ -11,16 +11,24 @@ show_excerpts: false # set to true to show excerpts on the homepage
 
 mono-lite:
 
+  intro_description: >
+    Write a brief intro description about yourself. Essentially a bio
+    for the header of the page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium auctor semper. 
+    Etiam ac vulputate nibh. Morbi sagittis porttitor velit quis consectetur. Phasellus at lacus felis. 
+    Nulla ac iaculis lectus. Nam fermentum massa lorem. Donec mattis vitae mauris ut rutrum. 
+    Quisque facilisis justo vitae magna mattis suscipit. Nam non elit eget magna varius facilisis vitae ac mi. 
+    Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean consequat ligula eget iaculis dignissim.
+
   # generate social links in footer
-  social_links:
-    twitter: jekyllrb
-    github:  jekyll
+  # social_links:
+    # twitter: jekyllrb
+    # github:  jekyll
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
     # instagram: jekyll
-    linkedin: jekyll
+    # linkedin: jekyll
     # pinterest: jekyll
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
@@ -43,11 +51,6 @@ mono-lite:
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
 
 # Build settings
 theme: mono-lite
