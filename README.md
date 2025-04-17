@@ -2,7 +2,7 @@
 
 A lightweight single-column Jekyll theme.
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.webp)
 
 ## Installation
 
