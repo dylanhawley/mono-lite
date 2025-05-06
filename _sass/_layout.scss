@@ -1,13 +1,13 @@
 .back-btn {
   text-decoration: none;
-  color: rgb(49,49,49);
+  color: $brand-color-dark;
   margin-top: 0;
   position: relative;
   top: -8px;
 }
 
 .back-btn:hover {
-  color: black;
+  color: $brand-color;
 }
 
 .site-header p {
@@ -19,43 +19,17 @@
 }
 
 .site-title {
-  font-weight: 300;
-  font-size: 18px;
-  text-decoration-color: #000;
-  text-decoration-line: none;
-  text-decoration-style: solid;
-  text-decoration-thickness: auto;
-  text-size-adjust: 100%;
-  line-height: 28px;
+  font-size: 1.125rem;
 }
 
 .page-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  max-width: 850px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
   align-items: center;
-}
-
-.social-media-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 136px;
-}
-
-.svg-icon {
-  width: 22px;
-  height: 22px;
-  opacity: .7;
-  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-}
-
-.svg-icon:hover {
-  cursor: pointer;
-  opacity: .9;
 }
 
 section {
@@ -65,15 +39,15 @@ section {
 }
 
 .post-category {
-  margin-top: 48px;
-  font-weight: 400;
+  margin-top: 2.5rem;
+  font-weight: 500;
 }
 
 .post-row {
   display: flex;
-  color: black;
+  color: $text-color;
   text-decoration: none;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .post-row:hover {
@@ -104,11 +78,11 @@ section {
 
 .post-date {
   display: block;
-  margin-left: 32px;
-  margin-right: 16px;
+  margin-left: 2rem;
+  margin-right: 1rem;
   flex-shrink: 0;
   font-weight: 300;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 .post-title {
@@ -117,7 +91,7 @@ section {
 
 .post-title-header {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
@@ -147,31 +121,29 @@ section {
 
 .post-byline {
   position: relative;
-  top: -12px;
+  top: -1rem;
   font-weight: 300;
-  margin-bottom: 8px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-social-links {
+  a {
+    color: $text-color;
+    text-decoration: none;
+    margin-left: 1rem;
+    
+    &:hover {
+      color: $brand-color;
+    }
+  }
 }
 
 @media (max-width: $on-palm) {
-  .site-title {
-    text-align: center;
-  }
-
-  .svg-icon {
-    width: 28px;
-    height: 28px;
-  }
-
-  .social-media-list {
-    margin: 0 auto;
-    width: 257px;
-  }
-
-  .page-content {
-    width: calc(100% - 40px);
-    margin: 0 20px;
-  }
-
   .post-img {
     height: 100px;
     width: 100px;
@@ -180,7 +152,7 @@ section {
   .post-details {
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 16px;
+    margin-left: 1rem;
     -webkit-box-align: center;
     justify-content: center;
   }

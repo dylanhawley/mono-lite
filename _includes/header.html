@@ -1,6 +1,18 @@
 <header class="site-header">
-  <p class="site-title">{{ site.title | upcase }}</p>
+  <div class="header-content">
+    <p class="site-title">{{ site.title | upcase }}</p>
+    <div class="header-social-links">
+      {%- if site.author.email -%}
+        <a href="mailto:{{ site.author.email }}" title="Email">Email</a>
+      {%- endif -%}
+      {%- if site.mono-lite.social_links.github -%}
+        <a href="https://github.com/{{ site.mono-lite.social_links.github | cgi_escape }}" title="{{ site.mono-lite.social_links.github }}">GitHub</a>
+      {%- endif -%}
+      {%- if site.mono-lite.social_links.linkedin -%}
+        <a href="https://www.linkedin.com/in/{{ site.mono-lite.social_links.linkedin | cgi_escape }}" title="{{ site.mono-lite.social_links.linkedin }}">LinkedIn</a>
+      {%- endif -%}
+    </div>
+  </div>
   <p>{{ site.mono-lite.intro_description }}</p>
   <p>{{ site.mono-lite.secondary_description }}</p>
-  {%- include social.html -%}
 </header>
