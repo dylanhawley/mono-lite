@@ -5,6 +5,9 @@
       {%- if site.author.email -%}
         <a href="mailto:{{ site.author.email }}" title="Email">Email</a>
       {%- endif -%}
+      {%- if site.mono-lite.social_links.resume -%}
+        <a href="{{ site.mono-lite.social_links.resume }}" title="Resume">Resume</a>
+      {%- endif -%}
       {%- if site.mono-lite.social_links.github -%}
         <a href="https://github.com/{{ site.mono-lite.social_links.github | cgi_escape }}" title="{{ site.mono-lite.social_links.github }}">GitHub</a>
       {%- endif -%}
