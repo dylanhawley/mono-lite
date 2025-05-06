@@ -48,14 +48,13 @@ section {
   color: $text-color;
   text-decoration: none;
   margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
 }
 
 .post-row:hover {
-  background: rgb(251, 251, 251);
-
-  .post-img img {
-    transform: scale(1.04);
-  }
+  background: rgb(250, 250, 250);
+  transform: scale(1.01);
 }
 
 .post-img {
@@ -72,7 +71,6 @@ section {
   
   img {
     border-radius: 8px;
-    transition: transform 0.3s ease;
     width: 100%;
     height: 100%;
     object-fit: cover;
