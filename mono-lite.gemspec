@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "mono-lite"
-  spec.version       = "0.3.1"
+  spec.version       = "0.3.2"
   spec.authors       = ["Dylan Hawley"]
   spec.email         = ["dylanthomashawley@gmail.com"]
 
