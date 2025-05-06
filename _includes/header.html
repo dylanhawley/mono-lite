@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="header-content">
-    <p class="site-title">{{ site.title | upcase }}</p>
+    <p class="site-title"><a href="/" class="unstyled-link">{{ site.title | upcase }}</a></p>
     <div class="header-social-links">
       {%- if site.author.email -%}
         <a href="mailto:{{ site.author.email }}" title="Email">Email</a>
@@ -16,6 +16,4 @@
       {%- endif -%}
     </div>
   </div>
-  <p>{{ site.mono-lite.intro_description }}</p>
-  <p>{{ site.mono-lite.secondary_description }}</p>
 </header>

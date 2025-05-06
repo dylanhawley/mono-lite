@@ -3,13 +3,9 @@ layout: default
 ---
 
 <section>
-  <p class="site-title">{{ site.title | upcase }}</p>
-  <a class="back-btn" href="/">
-    <span>👈</span>
-    Back to all work
-  </a>
+  {%- include header.html -%}
 </section>
 
-<section style="margin-top: 32px;">
+<section>
   {{ content }}
 </section>
