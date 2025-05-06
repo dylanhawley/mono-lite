@@ -48,6 +48,12 @@ section {
   font-weight: 600;
 }
 
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .post-row {
   display: flex;
   color: $text-color;
