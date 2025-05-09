@@ -9,7 +9,7 @@ layout: page
   </header>
 
   <div class="post-content">
-    {{ content }}
+    {{ content | lazy_load_images }}
   </div>
 
 </article>
